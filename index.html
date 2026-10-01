@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Задание 1 — Ерицян Оганес</title>
+</head>
+<body>
+
+  <header>
+    <h1>Практическая работа №1</h1>
+    <p>Выполнил: Ерицян Оганес</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Маркированный список гиперссылок</h2>
+      <ul>
+        <!-- 1 -->
+        <li><a href="http://kubsu.ru/">Главная страница kubsu.ru (http)</a></li>
+        <!-- 2 -->
+        <li><a href="https://kubsu.ru/">Главная страница kubsu.ru (https)</a></li>
+        <!-- 3 -->
+        <li>
+          <a href="https://kubsu.ru/">
+            <img src="https://kubsu.ru/favicon.ico" alt="Логотип КубГУ" width="32" height="32">
+          </a>
+        </li>
+        <!-- 4 -->
+        <li><a href="/index.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+        <!-- 5 -->
+        <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+        <!-- 6 -->
+        <li><a href="#footer-anchor">Ссылка на фрагмент текущей страницы</a></li>
+        <!-- 7 -->
+        <li><a href="https://kubsu.ru/index.php?param1=val1&amp;param2=val2&amp;param3=val3">Ссылка с тремя параметрами в URL</a></li>
+        <!-- 8 -->
+        <li><a href="https://kubsu.ru/index.php?id=12345">Ссылка с параметром id в URL</a></li>
+        <!-- 9 -->
+        <li><a href="./page.html">Относительная на страницу в текущем каталоге</a></li>
+        <!-- 10 -->
+        <li><a href="./about/page.html">Относительная на страницу в каталоге about</a></li>
+        <!-- 11 -->
+        <li><a href="../page.html">Относительная на страницу уровнем выше текущего</a></li>
+        <!-- 12 -->
+        <li><a href="../../page.html">Относительная на страницу двумя уровнями выше</a></li>
+        <!-- 13 -->
+        <li>
+          <p>ссылка на  <a href="https://kubsu.ru/"> КубГУ</a> прямо внутри предложения.</p>
+        </li>
+        <!-- 14 -->
+        <li><a href="https://judo.ru/?ysclid=mu6zdm6ce2954850798#Новости">Ссылка на фрагмент страницы стороннего сайта</a></li>
+        <!-- 15 -->
+        <li>
+          <p>Ссылки из областей картинки:</p>
+          <img src="https://avatars.mds.yandex.net/get-altay/15544497/2a000001983e2f8b032f1e4cf4bdc8aa36eb/orig" alt="Пример карты изображений" usemap="#example-map" width="300" height="150">
+          <map name="example-map">
+            <area shape="rect" coords="10,10,140,140" href="https://kubsu.ru/" alt="Прямоугольная область">
+            <area shape="circle" coords="220,75,50" href="https://ru.wikipedia.org/" alt="Круглая область">
+          </map>
+        </li>
+        <!-- 16 -->
+        <li><a href="">Ссылка с пустым href</a></li>
+        <!-- 17 -->
+        <li><a>Ссылка без href</a></li>
+        <!-- 18 -->
+        <li><a href="https://kubsu.ru/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+        <!-- 19 -->
+        <li><!--noindex--><a href="https://kubsu.ru/">Запрещенная для индексации поисковиками</a><!--/noindex--></li>
+        <!-- 20 -->
+        <li>
+          <span>Нумерованный список ссылок с подписями title:</span>
+          <ol>
+            <li><a href="https://kubsu.ru/" title="Перейти на главную КубГУ">Ссылка 1 с title</a></li>
+            <li><a href="https://ru.wikipedia.org/" title="Открыть Википедию">Ссылка 2 с title</a></li>
+          </ol>
+        </li>
+        <!-- 21 -->
+        <li><a href="ftp://user:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Форма обратной связи</h2>
+      <form action="#" method="POST">
+        <!-- 1 -->
+        <p>
+          <label for="fullname">ФИО:</label>
+
+          <input type="text" id="fullname" name="fullname" placeholder="Иванов Иван Иванович" required>
+        </p>
+
+        <!-- 2 -->
+        <p>
+          <label for="phone">Телефон:</label>
+
+          <input type="tel" id="phone" name="phone" placeholder="+7 (999) 000-00-00" required>
+        </p>
+
+        <!-- 3 -->
+        <p>
+          <label for="email">e-mail:</label>
+
+          <input type="email" id="email" name="email" placeholder="example@mail.ru"
+          ed>
+        </p>
+
+        <!-- 4 -->
+        <p>
+          <label for="birthdate">Дата рождения:</label>
+
+          <input type="date" id="birthdate" name="birthdate" required>
+        </p>
+
+        <!-- 5 -->
+        <p>
+          Пол:
+
+          <label><input type="radio" name="gender" value="male" checked> Мужской</label>
+          <label><input type="radio" name="gender" value="female"> Женский</label>
+        </p>
+
+        <!-- 6 -->
+        <p>
+          <label for="languages">Любимый язык программирования:</label>
+
+          <select id="languages" name="languages" multiple size="11" required>
+            <option value="pascal">Pascal</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="javascript">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="haskell">Haskel</option>
+            <option value="clojure">Clojure</option>
+            <option value="prolog">Prolog</option>
+            <option value="scala">Scala</option>
+          </select>
+        </p>
+
+        <!-- 7 -->
+        <p>
+          <label for="bio">Биография:</label>
+
+          <textarea id="bio" name="bio" rows="5" cols="30" placeholder="Расскажите о себе..."></textarea>
+        </p>
+
+        <!-- 8 -->
+        <p>
+          <label>
+            <input type="checkbox" name="contract" id="contract" required> 
+            С контрактом ознакомлен (а)
+          </label>
+        </p>
+
+        <!-- 9 -->
+        <p>
+          <button type="submit">Сохранить</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer-anchor">
+    <p>Ерицян Оганес, 2026</pccs
