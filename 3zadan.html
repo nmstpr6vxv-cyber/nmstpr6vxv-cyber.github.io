@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Задание 3 — Ерицян Оганес</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <header id="header">
+    <div class="container header-inner">
+      <img id="logo" src="https://upload.wikimedia.org/wikipedia/ru/a/a2/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%9A%D1%83%D0%B1%D0%93%D0%A3.png" alt="КубГУ" width="100" height="100">
+      <div>
+        <h1 id="site-title">Практическая работа №3</h1>
+        <p id="author">Выполнил: Ерицян Оганес</p>
+      </div>
+    </div>
+  </header>
+ 
+  <nav id="menu">
+    <ul class="container menu-list">
+      <li><a href="#links">Меню</a></li>
+      <li><a href="#table">Таблица</a></li>
+      <li><a href="#form">Форма</a></li>
+    </ul>
+  </nav>
+ 
+  <main class="container" id="content">
+    <section id="links">
+      <h2>Маркированный список гиперссылок</h2>
+      <ul>
+        <!-- 1 -->
+        <li><a href="http://kubsu.ru/">Главная страница kubsu.ru (http)</a></li>
+        <!-- 2 -->
+        <li><a href="https://kubsu.ru/">Главная страница kubsu.ru (https)</a></li>
+        <!-- 3 -->
+        <li>
+          <a href="https://kubsu.ru/">
+            <img src="https://kubsu.ru/favicon.ico" alt="Логотип КубГУ" width="32" height="32">
+          </a>
+        </li>
+        <!-- 4 -->
+        <li><a href="/index.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+        <!-- 5 -->
+        <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+        <!-- 6 -->
+        <li><a href="#footer-anchor">Ссылка на фрагмент текущей страницы</a></li>
+        <!-- 7 -->
+        <li><a href="https://kubsu.ru/index.php?param1=val1&amp;param2=val2&amp;param3=val3">Ссылка с тремя параметрами в URL</a></li>
+        <!-- 8 -->
+        <li><a href="https://kubsu.ru/index.php?id=12345">Ссылка с параметром id в URL</a></li>
+        <!-- 9 -->
+        <li><a href="./page.html">Относительная на страницу в текущем каталоге</a></li>
+        <!-- 10 -->
+        <li><a href="./about/page.html">Относительная на страницу в каталоге about</a></li>
+        <!-- 11 -->
+        <li><a href="../page.html">Относительная на страницу уровнем выше текущего</a></li>
+        <!-- 12 -->
+        <li><a href="../../page.html">Относительная на страницу двумя уровнями выше</a></li>
+        <!-- 13 -->
+        <li>
+          <p>ссылка на  <a href="https://kubsu.ru/"> КубГУ</a> прямо внутри предложения.</p>
+        </li>
+        <!-- 14 -->
+        <li><a href="https://judo.ru/?ysclid=mu6zdm6ce2954850798#Новости">Ссылка на фрагмент страницы стороннего сайта</a></li>
+        <!-- 15 -->
+        <li>
+          <p>Ссылки из областей картинки:</p>
+          <img src="https://avatars.mds.yandex.net/get-altay/15544497/2a000001983e2f8b032f1e4cf4bdc8aa36eb/orig" alt="Пример карты изображений" usemap="#example-map" width="300" height="150">
+          <map name="example-map">
+            <area shape="rect" coords="10,10,140,140" href="https://kubsu.ru/" alt="Прямоугольная область">
+            <area shape="circle" coords="220,75,50" href="https://ru.wikipedia.org/" alt="Круглая область">
+          </map>
+        </li>
+        <!-- 16 -->
+        <li><a href="">Ссылка с пустым href</a></li>
+        <!-- 17 -->
+        <li><a>Ссылка без href</a></li>
+        <!-- 18 -->
+        <li><a href="https://kubsu.ru/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+        <!-- 19 -->
+        <li><!--noindex--><a href="https://kubsu.ru/">Запрещенная для индексации поисковиками</a><!--/noindex--></li>
+        <!-- 20 -->
+        <li>
+          <span>Нумерованный список ссылок с подписями title:</span>
+          <ol>
+            <li><a href="https://kubsu.ru/" title="Перейти на главную КубГУ">Ссылка 1 с title</a></li>
+            <li><a href="https://ru.wikipedia.org/" title="Открыть Википедию">Ссылка 2 с title</a></li>
+          </ol>
+        </li>
+        <!-- 21 -->
+        <li><a href="ftp://user:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+      </ul>
+    </section>
+ 
+    <hr>
+ 
+    <section id="table">
+      <h2>Таблица</h2>
+      <table class="data-table">
+        <caption>Успеваемость по дисциплинам</caption>
+        <thead>
+          <tr>
+            <th>Дисциплина</th>
+            <th>Лекции</th>
+            <th>Практика</th>
+            <th>Итог</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Веб-разработка</td>
+            <td>20</td>
+            <td>30</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Базы данных</td>
+            <td>18</td>
+            <td>32</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Алгоритмы</td>
+            <td>15</td>
+            <td>25</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td colspan="4" class="merged">Дисциплины по выбору</td>
+          </tr>
+          <tr>
+            <td>Машинное обучение</td>
+            <td>10</td>
+            <td>20</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Компьютерная графика</td>
+            <td colspan="2">Только практика: 24</td>
+            <td>24</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+ 
+    <hr>
+ 
+    <section id="form">
+      <h2>Форма обратной связи</h2>
+      <form action="#" method="POST">
+        <!-- 1 -->
+        <p>
+          <label for="fullname">ФИО:</label>
+ 
+          <input type="text" id="fullname" name="fullname" placeholder="Иванов Иван Иванович" required>
+        </p>
+ 
+        <!-- 2 -->
+        <p>
+          <label for="phone">Телефон:</label>
+ 
+          <input type="tel" id="phone" name="phone" placeholder="+7 (999) 000-00-00" required>
+        </p>
+ 
+        <!-- 3 -->
+        <p>
+          <label for="email">e-mail:</label>
+ 
+          <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+        </p>
+ 
+        <!-- 4 -->
+        <p>
+          <label for="birthdate">Дата рождения:</label>
+ 
+          <input type="date" id="birthdate" name="birthdate" required>
+        </p>
+ 
+        <!-- 5 -->
+        <p>
+          Пол:
+ 
+          <label><input type="radio" name="gender" value="male" checked> Мужской</label>
+          <label><input type="radio" name="gender" value="female"> Женский</label>
+        </p>
+ 
+        <!-- 6 -->
+        <p>
+          <label for="languages">Любимый язык программирования:</label>
+ 
+          <select id="languages[]" name="languages" multiple size="11" required>
+            <option value="pascal">Pascal</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="javascript">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="haskell">Haskel</option>
+            <option value="clojure">Clojure</option>
+            <option value="prolog">Prolog</option>
+            <option value="scala">Scala</option>
+          </select>
+        </p>
+ 
+        <!-- 7 -->
+        <p>
+          <label for="bio">Биография:</label>
+ 
+          <textarea id="bio" name="bio" rows="5" cols="30" placeholder="Расскажите о себе..."></textarea>
+        </p>
+ 
+        <!-- 8 -->
+        <p>
+          <label>
+            <input type="checkbox" name="contract" id="contract" required> 
+            С контрактом ознакомлен (а)
+          </label>
+        </p>
+ 
+        <!-- 9 -->
+        <p>
+          <button type="submit">Сохранить</button>
+        </p>
+      </form>
+    </section>
+  </main>
+ 
+  <footer id="footer-anchor">
+    <div class="container">
+      <p>Ерицян Оганес, 2026</p>
+    </div>
+  </footer>
+<style>
+/* ===== Mobile First: базовые правила для смартфонов (портрет) ===== */
+* { box-sizing: border-box; }
+ 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+ 
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+ 
+/* шапка, навигация, контент и футер — на всю ширину экрана */
+#header {
+  width: 100%;
+  background-color: #2e8b57;
+  color: #fff;
+}
+ 
+.header-inner {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+ 
+#logo {
+  flex: 0 0 auto;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+ 
+#site-title {
+  margin: 0;
+  font-size: 22px;
+}
+ 
+#author { margin: 5px 0 0; }
+ 
+/* меню: вертикальный список */
+#menu {
+  width: 100%;
+  background-color: #1f5f3d;
+}
+ 
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+ 
+.menu-list a {
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+ 
+.menu-list a:hover { background-color: #2e8b57; }
+ 
+/* контент: колонка; визуальный порядок задаётся через order */
+#content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+ 
+#content > section {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #999;
+}
+ 
+#content > section:last-child { border-bottom: 0; }
+ 
+/* в HTML: ссылки → таблица → форма; на смартфоне: таблица → ссылки → форма */
+#table { order: 1; overflow-x: auto; }
+#links { order: 2; }
+#form  { order: 3; }
+ 
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+ 
+.data-table caption { text-align: left; font-weight: bold; padding-bottom: 6px; }
+ 
+.data-table th,
+.data-table td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: left;
+}
+ 
+.data-table th { background-color: #2e8b57; color: #fff; }
+ 
+.data-table tbody tr:nth-child(odd)  { background-color: #f2f2f2; }
+.data-table tbody tr:nth-child(even) { background-color: #d9ecdf; }
+ 
+.data-table .merged { text-align: center; font-weight: bold; }
+ 
+form select,
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="date"],
+form textarea {
+  max-width: 100%;
+}
+ 
+#links img[usemap] { max-width: 100%; height: auto; }
+ 
+#footer-anchor {
+  width: 100%;
+  background-color: #ccc;
+  padding: 15px 0;
+}
+ 
+#footer-anchor p { margin: 0; }
+ 
+/* ===== Планшеты и десктопы (от 768px): вид как в задании 2 ===== */
+@media screen and (min-width: 768px) {
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+ 
+  #site-title { font-size: 32px; }
+ 
+  .menu-list { flex-direction: row; }
+ 
+  /* прежний порядок: ссылки → таблица → форма */
+  #table,
+  #links,
+  #form { order: 0; }
+}
+ 
+<style>
+ 
+</body>
+</html>
+ 
